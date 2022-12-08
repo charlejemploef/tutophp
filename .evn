@@ -1,0 +1,7 @@
+SERVER_ADDRESS = localhost
+SERVER_DB = mysql
+
+DB_USER = root
+DB_PASSWORD = 
+DB_NAME = db_test
+
