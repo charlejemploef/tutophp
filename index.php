@@ -14,5 +14,7 @@
     </ul>
     <input type="file" name = "foto">
     <h1>TEST GIT</h1>
+    <script src = "js/main.js">
+    </script>
 </body>
 </html>
