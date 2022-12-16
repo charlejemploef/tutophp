@@ -14,7 +14,17 @@
     </ul>
     <input type="file" name = "foto">
     <h1>TEST GIT</h1>
+    <h2>Subtitulo</h2>
     <script src = "js/main.js">
+
+    <ul>
+        <li>LISTA 1</li>
+        <li>LISTA 2</li>
+        <li>LISTA 3</li>
+        <li>LISTA 4</li>
+        <li>LISTA 5</li>
+    </ul>
+
     </script>
 </body>
 </html>
