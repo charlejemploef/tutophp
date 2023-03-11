@@ -4,6 +4,8 @@
         header("Location: login.php");
     }
     include ("connect.php");
+    $ObjConn = new DBConnect ();
+    $conn = $ObjConn->DoConnect();
     $user_id = $_POST["user_id"];
     $sql = "SELECT * from usuarios where ID=".$user_id;
     $query = mysqli_query($conn, $sql);
@@ -27,7 +29,7 @@
         </div>
         <div class="row">
             <label>Password:</label>
-            <input type="password" name="password" value = "<?php echo $row->Password?>"/>
+            <input type="password" name="password" value = "12345"/>
         </div>
         <div class="row">
             <button class="btnPrimary" type="submit">Guardar</button>

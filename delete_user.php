@@ -1,5 +1,8 @@
 <?php
     include("connect.php");
+    
+    $ObjConn = new DBConnect ();
+    $conn = $ObjConn->DoConnect();
     $user_id = $_POST["user_id"];
     if ($user_id <= 0){
         echo "Usuario no válido<br>";

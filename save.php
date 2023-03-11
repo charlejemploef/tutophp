@@ -1,6 +1,9 @@
 <?php
     include('connect.php');
 
+    $ObjConn = new DBConnect ();
+    $conn = $ObjConn->DoConnect();
+    
     $name = $_POST["name"];
     $user = $_POST["user"];
     $password = $_POST["password"];
@@ -11,7 +14,7 @@
         echo "<a href='registrar.php'>Regresar</a>";
         exit();
     }
-    
+
     $password = md5($password."cursophp");
 
     if ($query = mysqli_query($conn, "INSERT into usuarios (Nombre, Usuario, Password) values ('".$name."', '".$user."', '".$password."')"))

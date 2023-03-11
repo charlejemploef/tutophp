@@ -1,6 +1,10 @@
 <?php
     session_start();
     include ('connect.php');
+    
+    $ObjConn = new DBConnect ();
+    $conn = $ObjConn->DoConnect();
+    
     $user = $_POST["name"];
     $password = $_POST["password"];
     
