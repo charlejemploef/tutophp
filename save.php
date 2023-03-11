@@ -11,6 +11,8 @@
         echo "<a href='registrar.php'>Regresar</a>";
         exit();
     }
+    
+    $password = md5($password."cursophp");
 
     if ($query = mysqli_query($conn, "INSERT into usuarios (Nombre, Usuario, Password) values ('".$name."', '".$user."', '".$password."')"))
     {

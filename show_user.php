@@ -23,7 +23,7 @@
         </div>
         <div class="row">
             <label>Usuario:</label>
-            <input type="text" name="user" value=" <?php echo $row->Usuario?>"/>
+            <input type="text" name="user" value="<?php echo $row->Usuario?>"/>
         </div>
         <div class="row">
             <label>Password:</label>
